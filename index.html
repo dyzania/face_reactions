@@ -94,7 +94,7 @@
         let model, webcam, labelContainer, maxPredictions;
 
         async function init() {
-            // Hide the start button
+            //hide the start button
             document.querySelector('button').style.display = 'none';
 
             const modelURL = URL + "model.json";
@@ -130,7 +130,7 @@
                 const probability = prediction[i].probability.toFixed(2);
                 const box = labelContainer.childNodes[i];
                 
-                // Set background color based on emotion
+                //background image on emotions
                 const imageMap = {
                     'Happy': 'reactions/happy.png',
                     'Sadness': 'reactions/sad.png',
